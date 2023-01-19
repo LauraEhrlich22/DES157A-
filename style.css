@@ -3,7 +3,11 @@ main{
     min-width: 800px;
 }
 
-.banner{
+#banner{
     width: 1100px;
     height: 250px;
+}
+
+ul li{
+    list-style-type: none;
 }
