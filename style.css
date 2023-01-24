@@ -1,5 +1,7 @@
 body{
-    font-family: futura;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #010b36;
+    text-align: center;
 }
 
 main{
@@ -7,38 +9,171 @@ main{
     min-width: 800px;
 }
 
-#banner{
+.banner{
     width: 100%;
-    height: 250px;
-    border: 5px solid red;
+    height: 200px;
+    margin-top: 2em;
+    /* border: 5px solid red; */
  
+}
+
+.banner:hover h1{
+    -webkit-text-stroke: 2px #f9efff;
+    -webkit-text-fill-color: #f9efff;
+    text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 10px #fffbe1, 0 0 .10px #fffbe1, 0 0 0.5px #fffbe1, 0 0 .05px #fffbe1, 0 0 5px #fffbe1;
+    color:white;
+    cursor: pointer;
+    animation: none;
+}
+
+.banner:hover h2{
+    -webkit-text-stroke: 2px #fffbe1;
+    color:white;
+    cursor: pointer;
+    text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 10px #fffbe1, 0 0 .10px #fffbe1, 0 0 0.5px #fffbe1, 0 0 .05px #fffbe1, 0 0 5px #fffbe1;
+}
+
+.banner:hover .h{
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+    color:white;
+    cursor: pointer;
+    text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 10px #fffbe1, 0 0 .10px #fffbe1, 0 0 0.5px #fffbe1, 0 0 .05px #fffbe1, 0 0 5px #fffbe1;
+    animation: onOffY 2s linear infinite;
 }
 
 ul li{
     list-style-type: none;
 }
 
-h2{
-    font-family: 'Pacifico', cursive;;
+a{
+    text-decoration: none;
+    color:#f2deff;
 }
+
+.l{
+    animation: flicker 1s linear infinite;
+}
+
+.no-glow{
+    -webkit-text-stroke: 2px #6d3c8c;
+    animation: onOff 3s linear infinite;
+}
+
+.s{
+    -webkit-text-fill-color: #6d3c8c;
+    animation: onOffS 3s linear infinite;
+}
+
+.no-glow-offset{
+    -webkit-text-stroke: 2px #6d3c8c;
+    animation: onOff 5s linear infinite;
+}
+
+@keyframes onOffS{
+    0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+		/* //text-shadow: none; */
+        -webkit-text-fill-color: #6d3c8c;
+		
+	}
+	20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+		-webkit-text-fill-color: #e2b4ff;
+	}
+} 
+
+@keyframes onOffY{
+    0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+		/* //text-shadow: none; */
+        -webkit-text-stroke: 2px  #fff;
+		
+	}
+	20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+		-webkit-text-stroke: 2px #e2b4ff;
+	}
+}
+
+@keyframes onOff{
+    0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+		/* //text-shadow: none; */
+        -webkit-text-stroke: 2px #6d3c8c;
+		
+	}
+	20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+		-webkit-text-stroke: 2px #e2b4ff;
+	}
+}
+
+@keyframes flicker {
+	0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+		/* //text-shadow: none; */
+    opacity: .99;
+		
+	}
+	20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+		opacity: 0.4;
+	}
+}
+
+
+h1{
+    /* color: #010b36; */
+	font-size: 6em;
+    font-weight: 800;
+    display:inline;
+	-webkit-text-stroke: 2px #e2b4ff;
+    -webkit-text-fill-color: #010b36;
+}
+
+h2{
+    font-family: 'pacifico', cursive;
+    font-size: 2.5em;
+    color: #6d3c8c;
+    margin: .1em 0;
+    letter-spacing: 4px;
+}
+
+h3{
+    font-family: 'pacifico', cursive;
+    font-size: 1.5em;
+    color: #fffbe1;
+    letter-spacing: 4px;
+}
+
+.glow-purple{
+    text-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 5px #e2b4ff, 0 0 5px #781faf, 0 0 60px #8028b8, 0 0 60px #9a2dde, 0 0 10px #871fc8;
+
+}
+
+.glow-yellow{
+    text-shadow: 0 0 1px #fff, 0 0 .05px #fff, 0 0 .05px #fffbe1, 0 0 .05px #fffbe1, 0 0 0.5px #fffbe1, 0 0 .05px #fffbe1, 0 0 5px #fffbe1;
+
+}
+
 
 .sections{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-self: auto;
     justify-content: center;
+    text-decoration: none;
+
 }
 
 section{
-    padding: 0 2em;
-    margin: 1em 2em;
-    border: 4px solid black;
-
+    padding: 0 1em;
+    margin: 0 2em;
+    border: 2px solid white;
+    text-align: left;
+    text-decoration: none;
+    color: gray;
+    /* box-shadow:  0 0 1px rgb(255, 255, 255), 0 0 10px #fff, 0 0 10px #ffffff, 0 0 .05px #ffffff, 0 0 10px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff; */
+    border-radius: 25px;
 }
 
+
 footer{
+    color: #f2deff;
     text-align: center;
-    padding: 5em;
+    padding-top: 1em; 
+    
 }
 
