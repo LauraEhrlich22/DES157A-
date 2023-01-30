@@ -1,0 +1,78 @@
+body{
+
+    font-family: 'Indie Flower', cursive;
+    word-wrap: normal;
+    font-size: 1em;
+    color: gray;
+    background-image: url("jounal-backgound.PNG");
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* article{
+    background-image: url("jounal-backgound.PNG");
+    background-size: cover;
+} */
+
+h2{
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 2em;
+    color: black;
+}
+
+h1{
+    font-family: 'Signika Negative', sans-serif;
+    margin: 2.5em 15vw;
+    padding: 0;
+    text-align: left;
+    font-size: 3em;
+    color: black;
+}
+
+.sections{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 0em;
+}
+
+.sections h1{
+    margin: 0 0;
+    padding-bottom: 1em;
+    font-size: 3em;
+     
+}
+
+p{
+    padding-bottom: 3em;
+}
+.weather{
+    padding-top: 2em;
+}
+section{
+    /* padding: 0 1em; */
+    margin: 0 10vw;
+    text-align: left;
+    text-decoration: none;
+    
+   
+}
+
+.left-side{
+  /* margin-left: 8em; */
+  padding-right: 10em;
+}
+.dividing-line{
+   
+    height: 100vh;
+    border-left: 2px solid black;
+    text-align: center;
+}
+
+.right-side{
+    max-width: 20vw;
+   
+}
+
+
