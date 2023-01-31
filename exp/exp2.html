@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>DOM Challenges</title>
+</head>
+
+<body>
+	<main>
+		<header>
+			<h1>I'm thinking of a number 1-10...</h1>
+			<p>guess what my number is!</p>
+	</main>
+	
+	<script>
+		var user = prompt("Pick a number 1-10", "");
+		var number = 4;
+		var p = document.getElementsByTagName('p');
+		var background = document.getElementsByTagName('body');
+		var button = document.getElementsByTagName('button');
+		
+		if(user == number){
+			p[0].innerHTML = "you got it!";
+			background[0].style.backgroundColor = "#90EE90";
+		}
+		else{
+			p[0].innerHTML = "hmm not quite";
+			background[0].style.backgroundColor = "red";
+		}
+		
+		
+		
+	</script>
+	
+</body>
+</html>
