@@ -1,20 +1,7 @@
 body{
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-	background-color: yellow;
-	font-family: 'Open Sans', sans-serif;
-	display:flex;
-	flex-wrap: inline;
-=======
+/* 	display:flex;
+	flex-wrap: inline; */
     font-family: futura;
->>>>>>> parent of 7f3e572 (animations added)
-=======
-    font-family: futura;
->>>>>>> parent of 7f3e572 (animations added)
-=======
-    font-family: futura;
->>>>>>> parent of 7f3e572 (animations added)
 }
 
 main{
@@ -26,9 +13,6 @@ main{
 	border: 5px solid black;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 h1{
 	text-align:center;
 	font-size:5em;
@@ -45,72 +29,7 @@ h2{
 	padding-left: 10px;
 }
 
-h4.Friend{
-	border-left: 5px solid #5DC1F2;
-	padding-left: 10px;
-}
 
-h4.You{
-	border-left: 5px solid #CC0000;
-	padding-left: 10px;
-}
-
-.phone{
-	background-color: white;
-	padding: .5em 4em;
-	border-radius: 10%;
-	word-wrap: break-after;
-}
-input[type=text], select{
-  width: 50%;
-  margin: 1em 0;
-  border-style: none;
-  border-bottom-style: solid;
-  padding: .5em .8em;
-  border-radius: 0;
-  display:block
-}
-
-form{
-	//display:none;
-}
-label{
-	font-weight: 300;
-}
-
-input[type=text]:focus{
-	border-style: none;
-	border-left: 5px solid red;
-	padding-left: 10px;
-}
-
-input[type=submit]{
-	background-color: #5DC1F2;
-	color: white;
-	margin-top: 1em;
-	padding: .5em .8em;
-	border-radius: 30px;
-	border: none;
-	text-align: center;
-	margin-left: 40%;
-}
-
-.overlay{
-	z-index:2;
-	margin-left: 0;
-	padding-right:10em;
-	display: none;
-}
-
-img{
-	width: 50%;
-	text-align: center;
-	margin-left: 7em;
-=======
-=======
->>>>>>> parent of 7f3e572 (animations added)
-=======
->>>>>>> parent of 7f3e572 (animations added)
 #banner{
     width: 100%;
     height: 250px;
@@ -144,12 +63,4 @@ section{
 footer{
     text-align: center;
     padding: 5em;
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of 7f3e572 (animations added)
-=======
->>>>>>> parent of 7f3e572 (animations added)
-=======
->>>>>>> parent of 7f3e572 (animations added)
 }
-
