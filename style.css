@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 body{
+<<<<<<< HEAD
 /* 	display:flex;
 	flex-wrap: inline; */
+=======
+>>>>>>> parent of 7f3e572 (animations added)
     font-family: futura;
 }
 
@@ -19,6 +22,7 @@ main{
 	border: 5px solid black;
 }
 
+<<<<<<< HEAD
 h1{
 	text-align:center;
 	font-size:5em;
@@ -45,6 +49,17 @@ ul li{
     list-style-type: none;
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+#banner{
+    width: 100%;
+    height: 250px;
+    border: 5px solid red;
+ 
+}
+
+ul li{
+    list-style-type: none;
+>>>>>>> parent of 7f3e572 (animations added)
 }
 
 h2{
