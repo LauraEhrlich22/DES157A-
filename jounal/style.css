@@ -8,6 +8,10 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
+/* article{
+    background-image: url("jounal-backgound.PNG");
+    background-size: cover;
+} */
 
 h2{
     font-family: 'Signika Negative', sans-serif;
@@ -35,7 +39,7 @@ h1{
 
 .sections h1{
     margin: 0 0;
-    padding-bottom: 0em;
+    padding-bottom: 1em;
     font-size: 3em;
      
 }
@@ -46,10 +50,8 @@ p{
 .weather{
     padding-top: 2em;
 }
-.impotant-links-spacing{
-    padding-bottom: 1em;
-}
 section{
+    /* padding: 0 1em; */
     margin: 0 10vw;
     text-align: left;
     text-decoration: none;
@@ -57,6 +59,10 @@ section{
    
 }
 
+.left-side{
+  /* margin-left: 8em; */
+  padding-right: 10em;
+}
 .dividing-line{
    
     height: 100vh;
@@ -66,9 +72,7 @@ section{
 
 .right-side{
     max-width: 20vw;
+   
 }
 
-.left-side{
-    margin-top: 4em;;
-}
 
