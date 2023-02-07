@@ -13,28 +13,21 @@
 	</main>
 	
 	<script>
-	
-	//this function asks the user for a number 1-10 and checks if it is the same of the predetermined number 4. If it is, then it changes the background color to green and if it is not then it changes the background color to red.
-	
 		var user = prompt("Pick a number 1-10", "");
+		var number = 4;
+		var p = document.getElementsByTagName('p');
+		var background = document.getElementsByTagName('body');
+		var button = document.getElementsByTagName('button');
 		
-		function pickANumber(user){
-			var number = 4;
-			var p = document.getElementsByTagName('p');
-			var background = document.getElementsByTagName('body');
-			var button = document.getElementsByTagName('button');
-		
-			if(user == number){
-				p[0].innerHTML = "you got it!";
-				background[0].style.backgroundColor = "#90EE90";
-			}
-			else{
-				p[0].innerHTML = "hmm not quite";
-				background[0].style.backgroundColor = "red";
-			}
+		if(user == number){
+			p[0].innerHTML = "you got it!";
+			background[0].style.backgroundColor = "#90EE90";
+		}
+		else{
+			p[0].innerHTML = "hmm not quite";
+			background[0].style.backgroundColor = "red";
 		}
 		
-		pickANumber(user)
 		
 		
 	</script>
