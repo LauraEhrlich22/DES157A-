@@ -1,9 +1,13 @@
 body{
 <<<<<<< HEAD
+<<<<<<< HEAD
 	background-color: yellow;
 	font-family: 'Open Sans', sans-serif;
 	display:flex;
 	flex-wrap: inline;
+=======
+    font-family: futura;
+>>>>>>> parent of 7f3e572 (animations added)
 =======
     font-family: futura;
 >>>>>>> parent of 7f3e572 (animations added)
@@ -18,6 +22,7 @@ main{
 	border: 5px solid black;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 h1{
 	text-align:center;
@@ -97,6 +102,8 @@ img{
 	text-align: center;
 	margin-left: 7em;
 =======
+=======
+>>>>>>> parent of 7f3e572 (animations added)
 #banner{
     width: 100%;
     height: 250px;
@@ -130,6 +137,9 @@ section{
 footer{
     text-align: center;
     padding: 5em;
+<<<<<<< HEAD
+>>>>>>> parent of 7f3e572 (animations added)
+=======
 >>>>>>> parent of 7f3e572 (animations added)
 }
 
