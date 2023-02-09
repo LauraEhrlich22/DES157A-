@@ -15,6 +15,7 @@
 
     const phone = document.querySelector(".phone");
     const close = document.querySelector("#x");
+    const refresh = document.querySelector(".fa");
 
     myForm.addEventListener('submit', function(event){
         event.preventDefault();
@@ -42,6 +43,7 @@
         //add the overlay
         overlay.classList.remove("hidden");
         myForm.classList.add("hidden");
+        refresh.classList.remove("hidden");
 
     })
 
@@ -76,6 +78,13 @@
         phone.classList.remove("gumball");
         overlay.classList.remove("hidden");
         close.classList.add("hidden");
+    })
+
+    refresh.addEventListener("click", function(e){
+        overlay.classList.add("hidden");
+        myForm.reset();
+        myForm.classList.remove("hidden");
+        refresh.classList.add("hidden");
     })
 
 })();

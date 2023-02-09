@@ -7,18 +7,24 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="style.css" rel="stylesheet">
+	<script src="script.js" defer></script>
 </head>
 
 <body>
+	<header>
 	<div class ="left">
 		<h1>Snapchat<br>Scandal</h1>
 		<img src="images/ghost.png" alt="scandalous snapchat ghost">
 	</div>
+	</header>
 	<main>
 	
 		<div class="phone">
-				<button id="x" class="hidden">x</button>
+				<button id="x" class="hidden">&times;</button>
+				<i class="fa fa-refresh hidden"></i>
+				<button id="refresh" class="hidden">&times;</button>
 				<div id="overlay" class = "hidden">
 				<h4 class="You" id="userOut">Your Name</h4>
 OMG <strong id="genderOut">gender</strong> you will <em>not</em> believe what happened last night.
@@ -39,30 +45,30 @@ OMG <strong id="genderOut">gender</strong> you will <em>not</em> believe what ha
 		<form id="madlib">
 			<h2>Let's share some juicy gossip!</h2>
 			<label for="username">Your Name</label>
-			<input type="text" id="username">
+			<input type="text" id="username" required>
 
 			<label for="friend" >Friend's Name</label>
-			<input type="text" id="friend">
+			<input type="text" id="friend" required>
 
 			<label for="gender" >a gender (i.e girl, non-binary, woman, guy, dude, etc</label>
-			<input type="text" id="gender">
+			<input type="text" id="gender" required>
 			<label for="noun">Noun</label>
-			<select name="Noun" id="noun">
-				<option value ="chair">chair</option>
-				<option value = "balloon">balloon</option>
-				<option value = "gumball">gumball</option>
+			<select name="Noun" id="noun" required>
+				<option value = "-" id ="noun"></option>
+				<option value ="chair" id ="noun">chair</option>
+				<option value = "balloon" id ="noun">balloon</option>
+				<option value = "gumball" id ="noun">gumball</option>
 				</select>
 			<label for="verb">Verb, past-tense</label>
-			<input type="text" id="verb">
+			<input type="text" id="verb" required>
 			<label for="emoji">Emoji</label>
-			<input type="text" id="emoji">
+			<input type="text" id="emoji" required>
 			<label for="celebrity">Celebrity</label>
-			<input type="text" id="celebrity">
+			<input type="text" id="celebrity" required>
 			<input type="submit">
 		</form>
 		</div>
 
 	</main>
-	<script src="script.js" defer></script>
 </body>
 </html>
