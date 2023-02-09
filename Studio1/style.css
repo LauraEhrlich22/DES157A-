@@ -5,6 +5,42 @@ body{
 	flex-wrap: inline;
 }
 
+.chair{
+	background-image:url("images/chair.png");
+	background-size: cover;
+	height: 100%;
+	color: white;
+	text-align: center;
+}
+.gumball{
+	background-image:url("images/gumball.png");
+	background-size: cover;
+	height: 100%;
+	color: white;
+}
+
+.balloon{
+	background-image:url("images/balloon.png");
+	background-size: cover;
+	height: 100%;
+	color: white;
+}
+
+#x{
+	z-index:100;
+	border: 0;
+	background-color: transparent;
+	color:white;	
+}
+
+#x:hover{
+	cursor:pointer;
+}
+
+.tap-to-close{
+	text-align: right;
+}
+
 main{
 	margin:3em 5em;
 	transform: rotate(5deg);
@@ -16,10 +52,18 @@ main{
 }
 
 .box{
-	width: 20px;
-	height: 20px;
+	/* width: 20px;
+	height: 20px; */
+	border: 0;
+	border-left: 20px solid red;
+	padding-left: 10px;
 	display: block;
-	background-color: red;
+	background-color: white;
+	/* background-color: red; */
+}
+
+.box:hover{
+	cursor: pointer;
 }
 
 h1{
@@ -54,6 +98,7 @@ h4.You{
 	padding-top: .5em;
 	padding-bottom: .5em;
 	padding-left: 2em;
+	padding-right: 1em;
 	text-align: left;
 	border-radius: 10%;
 	/* word-wrap: break-after; */
@@ -92,6 +137,10 @@ input[type=submit]{
 	border: 1px solid white;
 	text-align: center;
 	margin-left: 40%;
+}
+
+input[type=submit]:hover{
+	cursor: pointer;
 }
 
 #overlay{

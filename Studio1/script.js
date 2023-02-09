@@ -8,8 +8,13 @@
     const friendOut = document.querySelectorAll("#friendOut");
     const genderOut = document.querySelector("#genderOut");
     const verbOut = document.querySelector("#verbOut");
-    const celebrityOut = document.querySelector("#celebrityOut")
-    const emojiOut = document.querySelector("#emojiOut")
+    const celebrityOut = document.querySelector("#celebrityOut");
+    const emojiOut = document.querySelector("#emojiOut");
+
+    const open = document.querySelector(".box");
+
+    const phone = document.querySelector(".phone");
+    const close = document.querySelector("#x");
 
     myForm.addEventListener('submit', function(event){
         event.preventDefault();
@@ -21,8 +26,6 @@
         const emoji = document.querySelector("#emoji").value;
         const celebrity = document.querySelector("#celebrity").value;
         console.log(userName + friendName + aGender + noun +verb+emoji+celebrity);
-        
-        // + aGender + noun + verb + emoji + celebrity);
 
         for(let i=0; i< userOut.length; i++){
             userOut[i].innerHTML = userName;
@@ -41,4 +44,38 @@
         myForm.classList.add("hidden");
 
     })
+
+    open.addEventListener("click", function(e){
+        e.preventDefault();
+        const noun = document.querySelector("#noun").value;
+        if(noun == "chair"){
+            console.log("here");
+            phone.classList.add("chair");
+            overlay.classList.add("hidden");
+            myForm.classList.add("hidden");
+            close.classList.remove("hidden");
+        }
+        else if(noun == "gumball"){
+            phone.classList.add("gumball");
+            overlay.classList.add("hidden");
+            myForm.classList.add("hidden");
+            close.classList.remove("hidden");
+        }
+        else if(noun == "balloon"){
+            phone.classList.add("balloon");
+            overlay.classList.add("hidden");
+            myForm.classList.add("hidden");
+            close.classList.remove("hidden");
+        }
+    })
+
+    close.addEventListener("click", function(e){
+        e.preventDefault();
+        phone.classList.remove("chair");
+        phone.classList.remove("balloon");
+        phone.classList.remove("gumball");
+        overlay.classList.remove("hidden");
+        close.classList.add("hidden");
+    })
+
 })();
