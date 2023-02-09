@@ -2,7 +2,6 @@ body{
 	background-color: yellow;
 	font-family: 'Open Sans', sans-serif;
 	display:flex;
-	flex-wrap: inline;
 }
 
 .chair{
