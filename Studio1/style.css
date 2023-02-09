@@ -6,12 +6,20 @@ body{
 }
 
 main{
-	margin:3em;
+	margin:3em 5em;
 	transform: rotate(5deg);
-	padding: 2em 2em;
+	padding: 2em 1em;
 	border-radius: 10%;
 	background-color: purple;
 	border: 5px solid black;
+	font-size: 16px;
+}
+
+.box{
+	width: 20px;
+	height: 20px;
+	display: block;
+	background-color: red;
 }
 
 h1{
@@ -20,7 +28,7 @@ h1{
 }
 
 .left{
-	margin: 3em;
+	margin-top: 3em; 
 	padding: 0;
 }
 
@@ -42,22 +50,26 @@ h4.You{
 
 .phone{
 	background-color: white;
-	padding: .5em 4em;
+	width: 30vw;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	padding-left: 2em;
+	text-align: left;
 	border-radius: 10%;
-	word-wrap: break-after;
+	/* word-wrap: break-after; */
 }
 input[type=text], select{
   width: 50%;
   margin: 1em 0;
   border-style: none;
   border-bottom-style: solid;
-  padding: .5em .8em;
+  padding: 0em .8em;
   border-radius: 0;
   display:block
 }
 
-form{
-	//display:none;
+.hidden{
+	display:none;
 }
 label{
 	font-weight: 300;
@@ -67,29 +79,32 @@ input[type=text]:focus{
 	border-style: none;
 	border-left: 5px solid red;
 	padding-left: 10px;
+	outline: none;
 }
 
 input[type=submit]{
 	background-color: #5DC1F2;
 	color: white;
-	margin-top: 1em;
+	margin-top: 0em;
+	margin-bottom: 1em;
 	padding: .5em .8em;
 	border-radius: 30px;
-	border: none;
+	border: 1px solid white;
 	text-align: center;
 	margin-left: 40%;
 }
 
-.overlay{
+#overlay{
 	z-index:2;
 	margin-left: 0;
 	padding-right:10em;
-	display: none;
+	/* display: none; */
 }
 
 img{
-	width: 50%;
-	text-align: center;
-	margin-left: 7em;
+	width: 35%;
+	/* text-align: center; */
+	margin-left: 14em;
+	border-radius: 50px;
 }
 
