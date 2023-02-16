@@ -4,8 +4,8 @@
 
     const myForm = document.querySelector("#madlib");
     const overlay = document.querySelector("#overlay")
-    const userOut = document.querySelectorAll("userOut");
-    const friendOut = document.querySelectorAll("friendOut");
+    const userOut = document.querySelectorAll(".userOut");
+    const friendOut = document.querySelectorAll(".friendOut");
     const genderOut = document.querySelector("#genderOut");
     const verbOut = document.querySelector("#verbOut");
     const celebrityOut = document.querySelector("#celebrityOut");
@@ -22,7 +22,7 @@
         const userName = document.querySelector("#username").value;
         const friendName = document.querySelector("#friend").value;
         const aGender = document.querySelector("#gender").value;
-        const noun = document.querySelector("noun").value;
+        const noun = document.querySelector(".noun").value;
         const verb = document.querySelector("#verb").value;
         const emoji = document.querySelector("#emoji").value;
         const celebrity = document.querySelector("#celebrity").value;
@@ -49,7 +49,7 @@
 
     open.addEventListener("click", function(e){
         e.preventDefault();
-        const noun = document.querySelector("#noun").value;
+        const noun = document.querySelector(".noun").value;
         if(noun == "chair"){
             console.log("here");
             phone.classList.add("chair");
