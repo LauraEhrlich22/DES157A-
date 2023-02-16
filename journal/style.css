@@ -12,7 +12,10 @@ body{
     background-image: url("jounal-backgound.PNG");
     background-size: cover;
 } */
-
+img{
+    margin-top: 2em;
+    width:20vw;
+}
 h2{
     font-family: 'Signika Negative', sans-serif;
     font-size: 2em;
@@ -21,7 +24,7 @@ h2{
 
 h1{
     font-family: 'Signika Negative', sans-serif;
-    margin: 2.5em 15vw;
+    margin: 2.5em 12vw;
     padding: 0;
     text-align: left;
     font-size: 3em;
@@ -52,7 +55,7 @@ p{
 }
 section{
     /* padding: 0 1em; */
-    margin: 0 10vw;
+    margin: 0 5vw;
     text-align: left;
     text-decoration: none;
     
