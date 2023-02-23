@@ -8,6 +8,7 @@ body{
     height: 65vh;
     position:absolute;
     transition: 2.5s;
+    animation: fadeOut 2s 3s; 
 }
 
 .intro{
@@ -53,4 +54,13 @@ body{
      */
      opacity: 0%;
      transition: .8s;
+}
+
+@keyframes fadeOut{
+    from{
+        opacity: 100%;
+    }
+    to{
+        opacity: 0%;
+    }
 }
