@@ -10,7 +10,7 @@ body{
     position:absolute;
     z-index: 10;
     transition: 1s;
-    animation-delay: 0ms;
+    /* animation-delay: 0ms; */
 }
 
 .intro{
@@ -60,7 +60,7 @@ section{
 }
 .zoom{
     transform: scale(1.5);
-    animation-delay: none;
+    /* animation-delay: none; */
 }
 
 .zoom2{
@@ -122,7 +122,7 @@ section{
 }
 
 #s2{
-    opacity: 100;
+    opacity: 90;
 }
 #s3{
     top: 0;
@@ -148,7 +148,7 @@ section{
 
 .down{
     transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
+  /* -webkit-transform: rotate(45deg); */
   border-color: rgb(211, 39, 186);
 }
 
@@ -172,7 +172,7 @@ section{
 }
 .left{
     transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
+  /* -webkit-transform: rotate(135deg); */
 }
 .first-example2{
     width: 100vw;
