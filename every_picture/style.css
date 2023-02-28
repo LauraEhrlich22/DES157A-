@@ -8,9 +8,14 @@ body{
     width: 50vw;
     height: 65vh;
     position:absolute;
+<<<<<<< HEAD
     z-index: 10;
     transition: 1s;
     animation-delay: 0ms;
+=======
+    transition: 2.5s;
+    animation: fadeOut 2s 3s; 
+>>>>>>> 042ebf66c29db30fae3da8ef83bd1d14df7384ad
 }
 
 .intro{
@@ -85,6 +90,7 @@ section{
      transition: .8s;
 }
 
+<<<<<<< HEAD
 .hide-image{
     display: none;
      opacity: 0%;
@@ -224,4 +230,13 @@ section{
     100%{
         opacity: 100%;
     }
+=======
+@keyframes fadeOut{
+    from{
+        opacity: 100%;
+    }
+    to{
+        opacity: 0%;
+    }
+>>>>>>> 042ebf66c29db30fae3da8ef83bd1d14df7384ad
 }
