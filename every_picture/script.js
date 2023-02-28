@@ -2,6 +2,7 @@
     'use strict';
     console.log('reading js');
 
+    //creating varaibles from classes and IDs
     const start_button = document.querySelector(".first-button");
     const tv = document.querySelector(".tv");
     const intro = document.querySelector(".intro");
@@ -17,7 +18,7 @@
     const halo = document.querySelector(".halo");
     const after = document.querySelector(".after-image");
 
-
+    //making sure the correct elements are showing and hidden at start
     tv.classList.remove("zoom");
     tv.classList.remove("zoom5");
     tv.classList.remove("zoom4");
@@ -25,8 +26,9 @@
     tv.classList.remove("zoom2");
     arrow.classList.remove("hide");
     intro.classList.remove("hide");
+  
 
-    
+    //setting up
     start_button.addEventListener("click", function(event){
         event.preventDefault();
         tv.classList.add("zoom");
@@ -34,6 +36,7 @@
         intro.classList.add("hide");
     })
 
+    //what to do on load
     window.addEventListener('load', function () {
 		const posts = document.querySelectorAll('section');
 		let postTops = [];
@@ -51,8 +54,9 @@
         let clicked = 0;
 		resetPagePosition();
 
+        //defines what happens at certain breakpoints of the scroll where the if statements define what happens on scroll down and else if on scroll up
 		window.addEventListener('scroll', function () {
-          
+            //first section zooms in the tv
 			pageTop = window.pageYOffset;
             if(lastPageTop > pageTop){
                 scrollingDown = 0;
@@ -99,6 +103,7 @@
             else if(pageTop > 120 && scrollingDown == 0){
                 tv.classList.remove('zoom5');
             }
+            //first sidebar
             if(pageTop > 140 && scrollingDown == 1){
                 console.log("animation");
                 tv.style.opacity = 0;
@@ -136,6 +141,8 @@
             else if(pageTop > 180 && scrollingDown == 0){
                 sidebar.classList.add("hide-image");
             }
+
+            //second sidebar
             if (pageTop > 400 && scrollingDown == 1){
                 // sidebar.style.position = "absolute";
                 sidebar2.classList.remove("hide-image");
@@ -146,6 +153,7 @@
                 sidebar2.classList.add("hide-image");
                 floaters.classList.add("hide-image");
             }
+            //moving to afterimages section
             if(pageTop > 600 && scrollingDown == 1){
                 sidebar.style.position = "absolute";
                 imgstatic.style.position = "absolute";
@@ -161,6 +169,7 @@
                 floaters.style.position = "fixed";
                 
             }
+            //attempt failed at adding in a mouseover to add halo effect (not enough time to fix)
             if(pageTop > 700 && scrollingDown == 1){
                 afterImageBase.classList.remove("hide-image");
                 section3.classList.remove("hide-image");
@@ -171,10 +180,12 @@
                 halo.classList.add("hide-image");
              
             }
+
             else if(pageTop > 700 && scrollingDown == 0){
                 afterImageBase.classList.add("hide-image");
                 section3.classList.add("hide-image");
             }
+            //moving the original image to show the after-image
             if(pageTop > 900 && scrollingDown == 1){
                 afterImageBase.style.right = "100vw";
                 after.classList.remove("hide-image");
@@ -183,6 +194,7 @@
                 afterImageBase.style.right = "10vw";
                 after.classList.add("hide-image");
             }
+            //end in black screen
             if(pageTop > 1100){
                 afterImageBase.style.position = "absolute";
                 after.style.position = "absolute";
