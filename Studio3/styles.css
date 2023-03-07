@@ -173,12 +173,12 @@ label, input{
     position: absolute;
 } */
 .hide{
-    display: hidden;
+    /* display: hidden; */
     opacity: 0;
 }
 
 
-#gamecontrol, #score {
+#gamecontrol, .score {
     /* background-color: #fff; */
     /* padding: 0; */
     top: 20vh;
@@ -195,7 +195,7 @@ label, input{
 #game {
     background-color:#333;
     position: absolute;
-    position: grid;
+    /* position: grid; */
     place-items: center;
     top: 50vh;
     left: 40vw;
@@ -205,7 +205,7 @@ label, input{
 }
 
 #quit{
-    display:hidden;
+    /* display:hidden; */
     background-color: red;
     color: white;
     border: none;
