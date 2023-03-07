@@ -14,6 +14,10 @@
     var winner = document.querySelector(".winner");
     var p1 = document.querySelector("#p1").value;
     var p2 = document.querySelector("#p2").value;
+    var whistle = document.querySelector("#whistle");
+    var ball = document.querySelector("#ball");
+    var pass = document.querySelector("#pass");
+
     jerseys.classList.remove("hide");
 
     
@@ -35,6 +39,7 @@
         gamejerseys.classList.remove("hide");
         game.classList.remove("hide");
         actionArea.classList.remove("hide")
+        whistle.play();
        
         gameData.index = Math.round(Math.random());
         console.log(gameData.index);
@@ -58,6 +63,7 @@
     }
 
     function throwDice(){
+
         console.log(checkWinningCondition());
         actionArea.innerHTML = '';
         gameData.rolll = Math.floor(Math.random()*6)+1;
@@ -91,12 +97,14 @@
             actionArea.innerHTML = '<button id="rollagain">Shoot again</button><button id="pass">Pass</button>';
             document.getElementById('rollagain').addEventListener('click', function(){
                 setUpTurn();
+                ball.play();
             });
             document.getElementById('pass').addEventListener('click', function(){
                 gameData.index ? (gameData.index = 0) : (gameData.index = 1);
                 setUpTurn();
-                console.log(showCurrentScore());
-                console.log(checkWinningCondition());
+                // pass.play();
+                // console.log(showCurrentScore());
+                // console.log(checkWinningCondition());
             });
             console.log(showCurrentScore());
             console.log(checkWinningCondition());
