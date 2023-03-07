@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of PIG</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mynerve&display=swap" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Game of PIG</h1>
+    <p>There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a "one". If this happens, this player's turn is over, and it is the other player’s turn. After each roll, the current player can either roll again, (assuming a "one" was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get 30 points or higher wins. Oh, and if you roll two "ones" (snake eyes), your current score gets zeroed out. So don’t do that.</p>
+
+    <div id="gamecontrol">
+        <!-- <h2>Start a Game</h2> -->
+        <div class="jerseys hide">
+            <div class="jersey">
+                <img src="basketball_jersey.png" alt="basketball_jersey">
+                <form>
+                    <input id ="p1"type="text">
+                    <!-- <input class="p1s" type="submit" value ="Go"> -->
+                </form>
+            </div>
+            <button id="startgame">Start</button>
+            <div class="jersey2">
+                <img src="basketball_jersey.png" alt="basketball_jersey">
+                <form>
+                    <input id = "p2" type="text">
+                    <!-- <input class="p2s" type="submit" value ="Go"> -->
+                </form>
+            </div>
+
+        </div>
+    </div>
+        
+        <!-- right now this randomly selects -->
+    <h1 class="winner"></h1>
+    <div class ="gamejerseys hide">
+        <div class="gjersey">
+            <h3 class="p1">player 1</h3>
+            <img src="jersey_clear.png" alt="basketball_jersey">
+            <h3 id="score" class ="s1"></h3>
+        </div>
+        <div class="gjersey2">
+            <h3 class="p2">player 2</h3>
+            <img src="jersey_clear.png" alt="basketball_jersey">
+            <h3 id="score" class="s2"></h3>
+        </div>
+    </div>
+    </div>
+    <div id="game" class = "hide"></div>
+    <div id="actions" class = "hide"></div>
+    <!-- <div id="score" class = "hide"></div> -->
+
+</body>
+</html>
+
+
