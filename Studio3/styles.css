@@ -1,0 +1,312 @@
+body {
+    font-family: Arial;
+    color: white;
+    padding: 0 100px;
+    line-height: 1.5em;
+    background-color: #333;
+    text-align: center;
+    /* padding-bottom: 0; */
+}
+
+h1{
+    text-align:center;
+}
+
+button{
+    border: none;
+    position: absolute;
+    display: grid;
+    place-content: center;
+    padding: 10px 40px;
+    border-radius: 20px;
+}
+#startgame{ 
+    padding: 10px 40px;
+    border-radius: 20px;
+    background-color: rgb(255, 78, 137);
+    color: white;
+    border: none;
+    position: absolute;
+    display: grid;
+    place-content: center;
+    top: 70vh;
+    margin-left: 28vw;
+}
+
+#startgame:hover{
+    cursor: pointer;
+    background-color: rgb(255, 110, 159);
+}
+
+/* .jerseys{
+    width: 100vw;
+} */
+/* div {
+    padding: 20px;
+}*/
+
+/* img{
+    top: 0vh;
+ 
+    /* width: 25em;   */
+/* } */
+
+.jersey{
+    position: relative;
+}
+.jersey img{
+    top:12vh;
+    left:5vw;
+    width: 17vw;
+    position: absolute;
+}
+
+input[type=text]{
+    position: absolute;
+    display: grid;
+    place-items: center;
+    top: 40vh;
+    border: none;
+    border-bottom: black dashed;
+    background-color: transparent;
+    width: 5.5em;
+    left: 1.5em;
+    margin-left: 5vw;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Mynerve', cursive;
+    outline: none;
+}
+
+/* .p1s{
+    /* width: 5.5em; */
+    /* left: 1.5em;
+    margin-left: 8.5vw;
+    font-size: 25px;
+    text-align: center;
+    outline: none;
+    position: absolute;
+    display: grid;
+    place-items: center;
+    top: 50vh;
+    border: none;
+    background-color: green;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 40px;
+} */ 
+
+/* .p2s {
+    border-radius: 40px;
+    /* width: 5.5em; */
+    /* left: 1.5em; */
+    /* margin-left: 8.5vw; */
+    /* font-size: 25px;
+    text-align: center;
+    outline: none;
+    position: absolute;
+    display: grid;
+    place-items: center;
+    top: 60vh;
+    border: none;
+    background-color: green;
+    color: white;
+    padding: 5px 5px;
+  
+}  */
+
+/* .p2s:hover{
+    background-color: rgb(13, 186, 13);
+    cursor: pointer;
+}
+.p1s:hover{
+    background-color: rgb(13, 186, 13);
+    cursor: pointer;
+} */
+
+input[type=text]:focus{
+    background-color: transparent;
+    outline: none;
+    border-bottom: black dashed;
+    cursor:pointer;
+}
+.jersey2 img{
+    top:12vh;
+    width: 17vw;
+    position: absolute;
+    margin-left: 45vw;
+}
+.jersey2 input{
+    margin-left: 45vw;
+    position: absolute;
+    display: grid;
+    place-items: center;
+    top: 40vh;
+    border: none;
+    border-bottom: black dashed;
+    background-color: transparent;
+    width: 5.5em;
+    left: 1.5em;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Mynerve', cursive;
+    outline: none;
+} 
+
+.p1{
+    color:black;
+    position: absolute;
+    left:3vw;
+    z-index:20;
+    top:10vh;
+}
+.p2{
+    color:black;
+    position: absolute;
+    right:3vw;
+    z-index:20;
+    top:10vh;
+}
+/* 
+label, input{
+    top:50vh;
+    position: absolute;
+} */
+.hide{
+    display: hidden;
+    opacity: 0;
+}
+
+
+#gamecontrol, #score {
+    /* background-color: #fff; */
+    /* padding: 0; */
+    top: 20vh;
+    margin-left: 10vw;
+    position: absolute;
+    display: grid;
+    /* /* place-items: right; */
+}
+
+/* #gamecontrol{
+    width: 100vw;
+} */
+
+#game {
+    background-color:#333;
+    position: absolute;
+    position: grid;
+    place-items: center;
+    top: 50vh;
+    left: 40vw;
+}
+#actions {
+    background-color: #333;
+}
+
+#quit{
+    display:hidden;
+    background-color: red;
+    color: white;
+    border: none;
+    position:absolute;
+    display: grid;
+    place-items: center;
+    padding: 10px 30px;
+    top:8vh;
+    left:65vw;
+}
+
+#quittext{
+    top:10vh;
+}
+
+.roll1{
+    margin-left: 35vw;
+    top:85vh;
+}
+.roll1:hover{
+    cursor: pointer;
+    background-color: #fff;
+}
+.roll2{
+    top:77vh;
+    margin-left: 70vh;
+    position:absolute;
+}
+#quit:hover{
+    background-color: rgb(255, 93, 93);
+    cursor:pointer;
+}
+
+.gamejerseys{
+    width:85vw;
+    height: 10vh;
+    top: 10vh;
+    position: relative;
+}
+
+.gjersey img{
+    position:absolute;
+    width: 12vw;
+    left:0vw;
+}
+
+.gjersey2 img{
+    position:absolute;
+    width: 12vw;
+    right:0vw;
+}
+
+#pass{
+    left: 50vw;
+    top: 85vh;
+    background-color: rgb(255, 78, 137);
+    color:white;
+}
+
+#pass:hover{
+    cursor:pointer;
+    background-color: rgb(253, 126, 126);
+}
+
+#rollagain{
+    left:39vw;
+    top: 85vh;
+    padding: 10px 25px;
+    background-color: rgb(255, 78, 137);
+    color:white;
+}
+
+#rollagain:hover{
+    cursor: pointer;
+    background-color: white;
+    background-color: rgb(253, 126, 126);
+    color:white;
+}
+
+.s1{
+    color: black;
+    position:absolute;
+    right:78vw;
+    bottom:20vh;
+    display: grid;
+    place-items: center;
+    font-size: 45px;
+}
+
+.s2{
+    color: black;
+    position:absolute;
+    left:67vw;
+    bottom:20vh;
+    display: grid;
+    place-items: center;
+    font-size: 45px;
+}
+
+.winner{
+    color:white;
+    display: grid;
+    place-items: center;
+}
