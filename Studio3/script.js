@@ -16,7 +16,7 @@
     var p2 = document.querySelector("#p2").value;
     var whistle = document.querySelector("#whistle");
     var ball = document.querySelector("#ball");
-    var pass = document.querySelector("#pass");
+    var pass = document.querySelector("#passSound");
 
     jerseys.classList.remove("hide");
 
@@ -95,19 +95,21 @@
         else{
             console.log("the game proceeds");
             gameData.score[gameData.index] = gameData.score[gameData.index] + gameData.rollSum;
-            actionArea.innerHTML = '<button id="rollagain">Shoot again</button><button id="pass">Pass</button>';
+            actionArea.innerHTML = '<button id="rollagain">Shoot again</button><button class="pass">Pass</button>';
+            document.querySelector(".pass").addEventListener('click', function(){
+                gameData.index ? (gameData.index = 0) : (gameData.index = 1);
+                console.log("here");
+                setUpTurn();
+                pass.play();
+                console.log(showCurrentScore());
+                console.log(checkWinningCondition());
+            })
+
             document.getElementById('rollagain').addEventListener('click', function(){
                 setUpTurn();
                 ball.play();
-            });
-            document.getElementById('pass').addEventListener('click', function(){
-                gameData.index ? (gameData.index = 0) : (gameData.index = 1);
-                setUpTurn();
-                // pass.play();
-                // console.log(showCurrentScore());
-                // console.log(checkWinningCondition());
-            });
-            console.log(showCurrentScore());
+            })
+            // ole.log(showCurrentScore());
             console.log(checkWinningCondition());
         }
 
@@ -122,7 +124,7 @@
                 // console.log(showCurrentScore());
             }
             else{
-                // score.innerHTML = `${gameData.score[0]}`;
+                score.innerHTML = `${gameData.score[0]}`;
                 s1.innerHTML = `${gameData.score[0]}`;
                 s2.innerHTML = `${gameData.score[1]}`;
             }

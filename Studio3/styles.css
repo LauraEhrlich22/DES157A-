@@ -156,14 +156,14 @@ input[type=text]:focus{
 .p1{
     color:black;
     position: absolute;
-    left:3vw;
+    left:4vw;
     z-index:20;
     top:10vh;
 }
 .p2{
     color:black;
     position: absolute;
-    right:3vw;
+    right:4vw;
     z-index:20;
     top:10vh;
 }
@@ -178,7 +178,7 @@ label, input{
 }
 
 
-#gamecontrol, .score {
+#gamecontrol, #score {
     /* background-color: #fff; */
     /* padding: 0; */
     top: 20vh;
@@ -248,24 +248,24 @@ label, input{
 
 .gjersey img{
     position:absolute;
-    width: 12vw;
+    width: 14vw;
     left:0vw;
 }
 
 .gjersey2 img{
     position:absolute;
-    width: 12vw;
+    width: 14vw;
     right:0vw;
 }
 
-#pass{
+.pass{
     left: 50vw;
     top: 85vh;
     background-color: rgb(255, 78, 137);
     color:white;
 }
 
-#pass:hover{
+.pass:hover{
     cursor:pointer;
     background-color: rgb(253, 126, 126);
 }
@@ -289,7 +289,7 @@ label, input{
     color: black;
     position:absolute;
     right:78vw;
-    bottom:20vh;
+    bottom:70vh;
     display: grid;
     place-items: center;
     font-size: 45px;
