@@ -1,0 +1,186 @@
+body{
+    background-color:#222;
+    color: white;
+    font-family: Arial;
+    display: grid;
+    place-items: center;
+}
+form{
+    width:100vw;
+    display: block;
+    /* position:absolute; */
+}
+/* input[type=text] {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  } */
+  /* input[type=checkbox]{
+    width:10vw;
+    padding: 50vw;
+    display: block;
+  } */
+  /* The container */
+.container {
+    display: inline;
+    position: relative;
+    padding-left: 35px;
+    margin-left: 40px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  input[type=text]{
+    position: absolute;
+    top:37vh;
+    margin-left: 30vw;
+  }
+
+  
+  .c{
+    position: absolute;
+    top: 52vh;
+  }
+
+  label{
+    position:absolute;
+    left:30vw;
+    top: 30vh;
+  }
+ 
+
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 15vh;
+    right: 2vw;
+    height: 50px;
+    width: 50px;
+    background-color: #eee;
+  }
+  
+  
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    /* background-color: #ccc; */
+    border: solid white 2px;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+h1{
+    text-align: center;
+    top: 15vh;
+}
+
+.one{
+    background-color: green;
+}
+
+.two{
+    background-color: purple;
+}
+
+.three{
+    background-color: rgb(0, 229, 255);
+}
+.four{
+    background-color: orange;
+}
+
+
+button, .b{
+
+    border: none;
+    width: 10em;
+    padding: 10px 10px;
+    border-radius: 20px;
+    background-color: rgb(255, 78, 137);
+    color:white;
+    margin-top: 70vh;
+    margin-left: 6vw;
+    position:absolute;
+}
+
+button:hover, .b:hover{
+    cursor: pointer;
+    background-color: rgb(255, 110, 159);
+} */
+/* main{
+
+    width:100vw;
+    height:75vh;
+    display: grid;
+    place-items: center;
+}
+
+h1{
+    text-align: center;
+    font-weight: 600;
+}
+h4{
+    text-align: center;
+    font-weight: 200;
+}
+img{
+
+    width: 35vw;
+    height: 50vh;
+    top:20vh;
+}
+
+button{
+
+    border: none;
+    width: 10em;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: rgb(255, 78, 137);
+    color:white;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(255, 110, 159);
+} */
