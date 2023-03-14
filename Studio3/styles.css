@@ -20,6 +20,7 @@ button{
     padding: 10px 40px;
     border-radius: 20px;
 }
+
 #startgame{ 
     padding: 10px 40px;
     border-radius: 20px;
@@ -54,6 +55,7 @@ button{
 .jersey{
     position: relative;
 }
+
 .jersey img{
     top:12vh;
     left:5vw;
