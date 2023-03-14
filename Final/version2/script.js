@@ -1,7 +1,7 @@
 (function(){
     "use strict";
     console.log("reading.js");
-    alert("Hello! Welcome to the game of alien! A couple of tasks for ya: 1. read the instructions and create an avatar for your self. 2. shoot the ball 3. pass the ball");
+    // alert("Hello! Welcome to the game of alien! A couple of tasks for ya: 1. read the instructions and create an avatar for your self. 2. shoot the ball 3. pass the ball");
     var page1 = document.querySelector(".page1");
     var page2 = document.querySelector(".page2");
     var page3 = document.querySelector(".page3");
@@ -31,6 +31,14 @@
     let alienCount1 = document.querySelector(".alien-count1");
     let alienCount2 = document.querySelector(".alien-count2");
     let currPlayer;
+    const color1 =document.querySelector(".gjersey1");
+    const color2 = document.querySelector(".gjersey2"); 
+    let p1 = document.querySelector(".gjersey1");
+    let p2 = document.querySelector(".p2");
+    let name2 = document.querySelector("#name2").value;
+
+
+
     jerseys.classList.remove("hide");
 
     //all javascript is mostly the same with the exception of added variables for hiding and showing based on click
@@ -48,6 +56,9 @@
         gameEnd: 29
     };
 
+    const a2colors = ['purple2.png', 'orange2.png', 'green2.png'];
+    let radio1 = document.getElementsByName("color1");
+    let radio2 = document.getElementsByName("color2");
     page1.classList.remove("hide");
     
     start.addEventListener("click", function(e){
@@ -58,12 +69,49 @@
         // page1.remove();
     })
 
+    for(let i = 0; i < radio1.length; i++){
+        radio1[i].addEventListener("click", function(){
+            if(radio1[i].value == "purple"){
+                console.log("purple");
+                color1.innerHTML += "<img class='gjersey1' id= 'img1' src='purple1.png' alt='alien1'>";
+            }
+            else if(radio1[i].value == "green"){
+                // color1.innerHTML = a1colors[1];
+                color1.innerHTML += "<img class='gjersey1' id= 'img1' src='green1.png' alt='alien1'>";
+            }
+            else if(radio1[i].value == "blue"){
+                color1.innerHTML += "<img class='gjersey1' id= 'img1' src='lightblue1.png' alt='alien1'>";
+            }
+        })
+    }
+    
+    for(let i = 0; i < radio2.length; i++){
+        radio2[i].addEventListener("click", function(){
+            if(radio2[i].value == "purple"){
+                console.log("purple");
+                color2.innerHTML += "<img class='gjersey2' id= 'img1' src='purple2.png' alt='alien2'>";
+            }
+            else if(radio2[i].value == "orange"){
+                // color1.innerHTML = a1colors[1];
+                color2.innerHTML += "<img class='gjersey2' id= 'img1' src='orange2.png' alt='alien2'>";
+            }
+            else if(radio2[i].value == "green"){
+                color2.innerHTML += "<img class='gjersey2' id= 'img1' src='green2.png' alt='alien2'>";
+            }
+        })
+    }
+    
     next.addEventListener("submit", function(e){
         e.preventDefault();
         console.log("here");
         page1.classList.add("hide");
         page3.classList.remove("hide");
         page2.remove(); 
+        const name1 = document.querySelector("#name1");
+        console.log(name1.value);
+        p1.innerHTML += `<h3>${name1}</h3>`;
+        // console.log(`the color is ${c}`);
+       
     })
 
     finish.addEventListener("submit", function(e){

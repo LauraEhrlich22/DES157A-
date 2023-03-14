@@ -27,26 +27,20 @@
     <h1 class="h1-avatar-creation">Player 1, Create Your Avatar!</h1>
     <div class="create-avatar1">
     <form class="f1">
-        <label for="name" class="n">Avatar Name</label>
-        <input type="text" id="name">
+        <label for="name1" class="n">Avatar Name</label>
+        <input type="text" id="name1" value="a1">
         <label for="c" class="c">Pick your Avatar Color</label>
-        <label class="container">
-            <input type="checkbox" checked="checked">
-            <span class="checkmark one"></span>
-          </label>
-          <label class="container" >
-            <input type="checkbox">
-            <span class="checkmark two"></span>
-          </label>
-          <label class="container">
-            <input type="checkbox">
-            <span class="checkmark three"></span>
-          </label>
-          <label class="container">
-            <input type="checkbox">
-            <span class="checkmark four"></span>
-          </label>
-          <input type="submit" class="b s1" value="next">
+        <div class="radios">
+            <input type="radio" id="purple"class="purple" name="color1" value="purple">
+            <label for="purple"></label>  
+            <input type="radio" id="orange" name="color1" value="orange">
+            <label for="orange"> </label>
+            <input type="radio" id="green" name="color1" value="green"> 
+            <label for="green"></label>
+            <input type="radio" id="blue" name="color1" value="blue">
+            <label for="blue"></label>  
+        </div>
+        <input type="submit" class="b s1" value="next">
       </form>
       <!-- <img src = alien2.png class="a1"> -->
     </div>
@@ -55,25 +49,19 @@
     <h1 class="h1-avatar-creation">Player 2, Create Your Avatar!</h1>
     <div class="create-avatar1">
     <form class="f2">
-        <label for="name" class="n">Avatar Name</label>
-        <input type="text" id="name">
+        <label for="name2" class="n">Avatar Name</label>
+        <input type="text" id="name2">
         <label for="c" class="c">Pick your Avatar Color</label>
-        <label class="container">
-            <input type="checkbox" checked="checked">
-            <span class="checkmark one"></span>
-          </label>
-          <label class="container" >
-            <input type="checkbox">
-            <span class="checkmark two"></span>
-          </label>
-          <label class="container">
-            <input type="checkbox">
-            <span class="checkmark three"></span>
-          </label>
-          <label class="container">
-            <input type="checkbox">
-            <span class="checkmark four"></span>
-          </label>
+        <div class="radios">
+            <input type="radio" id="purple2"class="purple" name="color2" value="purple">
+            <label for="purple"></label>  
+            <input type="radio" id="orange2" name="color2" value="orange">
+            <label for="orange"> </label>
+            <input type="radio" id="green2" name="color2" value="green"> 
+            <label for="green"></label>
+            <input type="radio" id="blue2" name="color2" value="blue">
+            <label for="blue"></label>  
+        </div>
           <input type="submit" class="b f" value="next">
       </form>
       <!-- <img src = alien2.png class="a1"> -->
@@ -105,15 +93,15 @@
     <div class ="gamejerseys hide">
         <div class="gjersey1">
             <div class="alien-count1"></div>
-            <img class="gjersey1" src="alien.png" alt="basketball_jersey">
-            <h3 class="p1">player 1</h3>
+            <!-- <img class="gjersey1" id= "img1" src="alien1.png" alt="alien1"> -->
+            <!-- <h3 class="p1">player 1</h3> -->
             <h3 class="score" class ="s1"></h3>
         </div>
         <button class="shoot">Shoot</button>
         <button class="pass">Pass</button>
         <div class="gjersey2">
             <div class="alien-count2"></div>
-            <img class="gjersey2" src="alien2.png" alt="basketball_jersey">
+            <!-- <img class="gjersey2" src="alien2.png" alt="alien2"> -->
             <h3 class="p2">player 2</h3>
             <h3 class="score" class="s2"></h3>
         </div>

@@ -37,7 +37,7 @@ form{
     display: block;
   } */
   /* The container */
-.container {
+/* .container {
     display: inline;
     position: relative;
     padding-left: 35px;
@@ -46,7 +46,7 @@ form{
     font-size: 22px;
     top:80%;
   }
-  
+   */
   input[type=text]{
     position: absolute;
     top:5vh;
@@ -64,57 +64,122 @@ form{
     left:30vw;
     top: 0vh;
   }
- 
 
-  /* Hide the browser's default checkbox */
-  .container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
+
   
-  /* Create a custom checkbox */
-  .checkmark {
-    position: absolute;
-    bottom: 50vh;
-    right: 2vw;
-    height: 50px;
+  input[type=radio]{
+   /* position: absolute; */
     width: 50px;
-    background-color: #eee;
-  }
-  
-  
-/* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
-    /* background-color: #ccc; */
-    border: solid white 2px;
-  }
-  
-  /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
-  /* Show the checkmark when checked */
-  .container input:checked ~ .checkmark:after {
-    display: block;
-  }
-  
-  /* Style the checkmark/indicator */
-  .container .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    transform: rotate(45deg);
+    height: 50px;
+    /* accent-color: black;
+    background-color: purple; */
+    border: none;
+    appearance: none;
+    
   }
 
+  .radios{
+    position: absolute;
+    top:25%;
+    left: 30%;
+    right:30%;
+  }
+
+  #purple2{
+    /* box-shadow: 0 0 0 5px purple; */
+    background-color: purple;
+  }
+
+  #purple2:hover{
+    border:2px solid #fff;
+  }
+  #purple2:checked{
+    border:2px solid #fff;
+  }
+  #green2:checked{
+    border:2px solid #fff;
+  }
+  #blue2:checked{
+    border:2px solid #fff;
+  }
+  #orange2:checked{
+    border:2px solid #fff;
+  }
+  #green2{
+    /* box-shadow: 0 0 0 5px green; */
+    background-color: green;
+  }
+
+  #green2:hover{
+    border:2px solid #fff;
+  }
+
+  #orange2{
+    background-color: orange;
+  }
+
+  #orange2:hover{
+    border:2px solid #fff;
+  }
+
+  #blue2{
+    background-color: lightblue;
+  }
+
+  #blue2:hover{
+    border:2px solid #fff;
+  }
+
+  #purple{
+    /* box-shadow: 0 0 0 5px purple; */
+    background-color: purple;
+  }
+
+  #purple:hover{
+    border:2px solid #fff;
+  }
+  #purple:checked{
+    border:2px solid #fff;
+  }
+  #green:checked{
+    border:2px solid #fff;
+  }
+  #blue:checked{
+    border:2px solid #fff;
+  }
+  #orange:checked{
+    border:2px solid #fff;
+  }
+  #green{
+    /* box-shadow: 0 0 0 5px green; */
+    background-color: green;
+  }
+
+  #green:hover{
+    border:2px solid #fff;
+  }
+
+  #orange{
+    background-color: orange;
+  }
+
+  #orange:hover{
+    border:2px solid #fff;
+  }
+
+  #blue{
+    background-color: lightblue;
+  }
+
+  #blue:hover{
+    border:2px solid #fff;
+  }
+
+  input[type=radio]:hover{
+    cursor: pointer;
+    background-color: #222;
+  }
+ 
 .page1{
   position:relative;
   display: grid;
@@ -175,7 +240,7 @@ form{
     background-color: rgb(255, 78, 137);
     color:white;
     top: 45vh;
-    margin-left: 6vw;
+    margin-left:30%;
     position:absolute;
 }
 
