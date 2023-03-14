@@ -1,7 +1,7 @@
 (function(){
     "use strict";
     console.log("reading.js");
-
+    alert("Hello! Welcome to the game of alien! A couple of tasks for ya: 1. read the instructions and create an avatar for your self. 2. shoot the ball 3. pass the ball");
     var page1 = document.querySelector(".page1");
     var page2 = document.querySelector(".page2");
     var page3 = document.querySelector(".page3");
