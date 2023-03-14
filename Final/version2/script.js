@@ -163,7 +163,7 @@
         else{
             console.log("the game proceeds");
             gameData.score[gameData.index] = gameData.score[gameData.index] + gameData.rollSum;
-            actionArea.innerHTML = '<button id="rollagain">Shoot again</button><button class="pass">Pass</button>';
+            // actionArea.innerHTML = '<button id="rollagain">Shoot again</button><button class="pass">Pass</button>';
             document.querySelector(".pass").addEventListener('click', function(){
                 gameData.index ? (gameData.index = 0) : (gameData.index = 1);
                 console.log("here");
