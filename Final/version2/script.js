@@ -107,7 +107,7 @@
         page1.classList.add("hide");
         page3.classList.remove("hide");
         page2.remove(); 
-        const name1 = document.querySelector("#name1");
+        name1 = document.querySelector("#name1");
         console.log(name1.value);
         p1.innerHTML += `<h3>${name1}</h3>`;
         // console.log(`the color is ${c}`);

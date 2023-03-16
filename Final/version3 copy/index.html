@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Final Version 1</title>
+</head>
+
+<body>
+  <div class ="page1 hide">
+        <div class="h1">
+          <img class="h1-img1" src="game_logo.png">
+          <img class="h1-img2" src= "alien_header.png">
+      </div>
+ 
+
+    <div class="main">
+        <h4>Press Shoot to shoot the ball and roll the die. If one of the numbers is a 1, your turn ends and a letter from alien is added. You can also end your turn by passing the ball to the next player to not risk getting a letter of Alien added to your score. First player to get al the letters of alien loses!</h4>
+        <button class="start">Get Started</button>
+    </div>
+  </div>
+  <div class="page2 hide">
+    <h1 class="h1-avatar-creation">Player 1, Create Your Avatar!</h1>
+    <div class="create-avatar1">
+    <form class="f1">
+        <label for="name1" class="n">Avatar Name</label>
+        <input type="text" id="name1" value="a1">
+        <label for="c" class="c">Pick your Avatar Color</label>
+        <div class="radios">
+            <input type="radio" id="purple"class="purple" name="color1" value="purple">
+            <label for="purple"></label>  
+            <input type="radio" id="orange" name="color1" value="orange">
+            <label for="orange"> </label>
+            <input type="radio" id="green" name="color1" value="green"> 
+            <label for="green"></label>
+            <input type="radio" id="blue" name="color1" value="blue">
+            <label for="blue"></label>  
+        </div>
+        <input type="submit" class="b s1" value="next">
+      </form>
+      <!-- <img src = alien2.png class="a1"> -->
+    </div>
+</div>
+<div class="page3 hide">
+    <h1 class="h1-avatar-creation">Player 2, Create Your Avatar!</h1>
+    <div class="create-avatar1">
+    <form class="f2">
+        <label for="name2" class="n">Avatar Name</label>
+        <input type="text" id="name2">
+        <label for="c" class="c">Pick your Avatar Color</label>
+        <div class="radios">
+            <input type="radio" id="purple2"class="purple" name="color2" value="purple">
+            <label for="purple"></label>  
+            <input type="radio" id="orange2" name="color2" value="orange">
+            <label for="orange"> </label>
+            <input type="radio" id="green2" name="color2" value="green"> 
+            <label for="green"></label>
+            <input type="radio" id="blue2" name="color2" value="blue">
+            <label for="blue"></label>  
+        </div>
+          <input type="submit" class="b f" value="next">
+      </form>
+      <!-- <img src = alien2.png class="a1"> -->
+    </div>
+</div>
+
+<div class="page4 hide">
+    <audio id ="whistle">
+        <source src="mixkit-police-short-whistle-615.wav">
+    </audio>
+    <audio id ="ball">
+        <source src="mixkit-basketball-ball-hit-2091.wav">
+    </audio>
+    <audio id ="pass">
+        <source src="mixkit-basketball-ball-hitting-the-net-2084.wav">
+    </audio>
+    
+    <div class="winning-shot">
+         <!-- <img class="made-gif" src="made-shot.gif"> -->
+         <div id="game" class = "hide"></div>
+    </div>
+
+    <!-- gameplay screen that shrinks down jerseys and allows user to play game -->
+    <h1 class="winner"></h1>
+    <div class="shoot-ball">
+        <img class="hoop" src="basketball-hoop.png">
+        <!-- <img class="alien-shooter" src="alien-animation.gif"> -->
+    </div>
+    <div class ="gamejerseys hide">
+        <div class="gjersey1">
+            <div class="alien-count1"></div>
+            <!-- <img class="gjersey1" id= "img1" src="alien1.png" alt="alien1"> -->
+            <!-- <h3 class="p1">player 1</h3> -->
+            <h3 class="score" class ="s1"></h3>
+        </div>
+        <button class="shoot">Shoot</button>
+        <button class="pass">Pass</button>
+        <div class="gjersey2">
+            <div class="alien-count2"></div>
+            <!-- <img class="gjersey2" src="alien2.png" alt="alien2"> -->
+            <h3 class="p2">player 2</h3>
+            <h3 class="score" class="s2"></h3>
+        </div>
+    </div>
+   
+    <div id="game" class = "hide"></div>
+    <div id="actions" class = "hide"></div>
+    <!-- <div id="score" class = "hide"></div> -->
+
+</div>
+</body>
+</html>
